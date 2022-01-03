@@ -1,0 +1,70 @@
+body { 
+font-family: 'Exo', sans-serif;
+box-sizing: border-box;
+}
+
+#name-label, #email-label, #number-label, #select, #select1, #comments, #button { 
+width: 100%;
+padding-top: 5px;
+padding-bottom: 5px;
+border-radius: 5px;
+border: transparent;
+cursor: pointer;
+margin: 4px;
+}
+
+#button { 
+color: black; 
+background-color: white;
+border-radius: 4px; 
+cursor: pointer;}
+
+#button:hover { 
+color: white;
+background-color: #45a049;
+}
+
+#survey-form { 
+  display: relative;
+  width: 600px;
+  margin: 10px 450px;
+  padding: 20px 20px;
+  overflow: hidden;
+  background-color: #333333;
+  color: white;
+  border-radius: 15px;
+  transition: 0.5s;
+  z-index: 1; 
+}
+
+#survey-form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background: #f5cb22;
+  transition: transform 300ms ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+#survey-form:hover::before,
+#survey-form:focus::before {
+  transform: scaleX(1);
+}
+
+#survey-form:hover {
+  background: transparent; 
+  color: black;
+}
+
+#description { 
+  padding-top: 10px;
+  text-align: center;
+  padding-bottom: 20px;
+  color: black;
+}
+

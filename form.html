@@ -1,0 +1,67 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Form</title>
+</head>
+
+
+<body>
+<form id="survey-form">
+  
+  <label>Name</label>
+  <input id="name-label" placeholder="Name" reaquired></input><br>
+<br>
+ <label>Email</label>
+  <input id="email-label" placeholder="Place your email" required></input><br>
+
+
+<p>Which option best describes your current role?</p>
+ 
+<select id="select">
+  <option value="0">Select curent role:</option>
+  <option value="1">Student</option>
+  <option value="2">Full time job</option>
+  <option value="3">Full time learner</option>
+  <option value="4">Prefer not to say</option>
+  <option value="5">Other</option>
+</select><br>
+
+<p>Would you recommend this website to a friend?</p>
+<label for="definitely"> 
+<input id="definitely" type="radio" name="definitely"> Definitely</label><br>
+
+<label for="maybe">
+<input id="maybe" type="radio" name="maybe"> Maybe</label><br>
+
+<label for="not sure"> 
+<input id="notsure" type="radio" name="notsure"> Not sure</label><br>
+
+
+
+<p>What is your favorite feature of the website?</p>
+ 
+<select id="select1">
+  <option value="0">Select an option:</option>
+  <option value="1">Challenges</option>
+  <option value="2">Projects</option>
+  <option value="3">Community</option>
+  <option value="4">Open source</option></select>
+  <br>
+
+
+
+<p>What would you like to see improved? (Check all that apply)</p>
+<label for="front"><input type="checkbox" name="front" value="front">Front-end Projects</label><br>
+<label for="back"><input type="checkbox" name="back" value="back">Back-end Projects</label><br>
+<label for="data"><input type="checkbox" name="data" value="data">Data Visualization</label><br>
+<label for="challenges"><input type="checkbox" name="challenges" value="challenges">Challenges</label><br>
+
+
+<p>Any comments or suggestions?</p>
+<textarea name="comments" id="comments">
+Enter your comment here... </textarea><br>
+<input type="button" id="button" value="Submit"></input><br>
+</form>
+</body>
+</html>
